@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en,jp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zuumi's Site</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+	<script type="text/javascript">
+		'use strict';
+		function increment(){
+			goodnum.innerHTML=(goodnum.innerHTML==""?0:parseInt(goodnum.innerHTML))+1;
+		}
+	</script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="container">
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<div class="bgc container-fluid">
+			<a class="navbar-brand" href="#top"><img id="myicon" src="img/yskicon.png"></a>
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div id="menu" class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" href="#">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="#gaiyo">SkillSets</a></li>
+					<li class="nav-item"><a class="nav-link" href="#history">History</a></li>
+					<li class="nav-item"><a class="nav-link" href="#activities">Hobby</a></li>
+					<li class="nav-item"><a class="nav-link" href="#information">Information</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+	<li data-target="#slides" data-slide-to="0" class="active"></li>
+	<li data-target="#slides" data-slide-to="1"></li>
+	<li data-target="#slides" data-slide-to="2"></li>
+</ul>
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="img/jobshome.jpg">
+		<div class="carousel-caption">
+			<h1 class="display-2">Zuumi</h1>
+			<h3>1,April,2020 〜</h3>
+			<div class="line">
+				<button type="button" class="btn btn-primary btn-lg" id="goodbtn" onclick="increment()">Good!</button>
+				<div id="goodnum">0</div>
+			</div>
+		</div>
+	</div>
+	<div class="carousel-item">
+		<img src="img/hpgarage.png">
+	</div>
+	<div class="carousel-item">
+		<img src="img/stanford.png">
+	</div>
+</div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+<div class="row jumbotron">
+	<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+		<p class="lead">My name is Kawazumi Yoshiki. <br>
+			These pictures were taken when visiting Silicon Valley.<br>
+			The first is the house where Steve Jobs lived before his death.<br>
+			The second is the garage used by Fillet and Packard, the birthplace of Silicon Valley.<br>
+			The third is Stanford University.</p>
+	</div>
+</div>
+</div>
+
+<!--- Welcome Section -->
+<div id="gaiyo">
+	<br>
+	<div class="container-fluid padding">
+	<div class="row welcome text-center">
+			<div class="col-12">
+				<h1 class="display-4">My Skill Sets</h1>
+			</div>
+			<hr>
+	</div>
+	</div>
+</div>
+
+
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fab fa-laravel" style="font-size:4em; margin: 1rem; color: #e54d26;"></i>
+			<h3>PHP (Laravel)</h3>
+			<p>Years of experience: 1<br>I can create a WEB service of simple CRUD by myself</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fab fa-python fa-4x"></i>
+			<h3>Python</h3>
+			<p>Years of experience: 1<br>I study automated programming using Selenium, WEB scraping,<br> Deep reinforcement learning and Natural language processing.</p>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-4">
+			<i class="fab fa-aws" style="font-size:4em; margin: 1rem; color: #563d7c;"></i>
+			<h3><a target="_blank" style="text-decoration: none;" href="https://www.youracclaim.com/badges/22cb87e7-5eed-47a0-a776-86eff6528dec/public_url"> AmazonWebService </a></h3>
+			<p>
+			<a target="_blank" href="https://www.youracclaim.com/badges/22cb87e7-5eed-47a0-a776-86eff6528dec/public_url"><img src="img/aws-certified-cloud-practitioner.png" href="https://www.youracclaim.com/badges/22cb87e7-5eed-47a0-a776-86eff6528dec/public_url" alt="aws-clf" width="80" height="80" style="border:0;" align="right"></a>
+			Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud.<br clear="all"></p>
+		</div>
+</div>
+	<hr class="my-4">
+</div>
+
+<!--- Two Column Section -->
+<div id="history">
+	<br>
+	<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<br>
+			<br>
+			<h2>My History</h2>
+			<hr>
+			<div class="multiline-text">
+			<input type="checkbox" id="next-link"/>
+			<label class="next-link" for="next-link"></label>
+				<div class="text">
+					<p>2009.4 <br> Entered Shizuoka Prefectural Hamamatsu Nishi High School Junior High School</p>
+					<p>2012.3 <br> Graduated from Shizuoka Prefectural Hamamatsu Nishi High School Middle School</p>
+					<p>2012.4 <br>Entered Shizuoka Prefectural Hamamatsu Nishi High School</p>
+					<p>2015.3 <br>Graduated from Shizuoka Prefectural Hamamatsu Nishi High School</p>
+					<p>2015.4 <br>Entered Aoyama Gakuin University Faculty of Science and Technology, Department of Information Technology</p>
+					<p>2020.3 <br>Graduated from Aoyama Gakuin University Faculty of Science and Technology, Department of Information Technology</p>
+					<p>I was frustrated with learning programming once, but after years of repetition, I overcame it</p>
+					<br>
+				</div>
+			</div>
+			<!-- <label href="#" class="btn btn-primary"></label> -->
+		</div>
+		<div class="col-lg-6">
+			<br>
+			<img src="img/aoyamagakuin.jpg" alt="" class="img-fluid">
+			<p class="centerp">This is Aoyama Gakuin University Sagamihara Campus.</p>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+
+		</div>
+	</div>
+</figure>
+
+<!--- Emoji Section -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">Click for fun</button>
+<div class="collapse" id="emoji">
+
+<div class="container-fluid padding">
+<div class="row text-center fun-background">
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="img/gif/applechakushin.gif">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="img/gif/applekirarainbow.gif">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="img/gif/applerainbow.gif">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img class="gif" src="img/gif/apple-kajikaji.gif">
+			</div>
+</div>
+</div>
+</div>
+
+
+<!--- Meet the team -->
+<div id="activities">
+	<div class="container-fluid padding">
+	<div class="row welcome text-center">
+			<div class="col-12">
+				<br>
+				<h1 class="display-4">Hobby</h1>
+			</div>
+			<hr>
+	</div>
+	</div>
+</div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+<div class="row padding">
+		<div class="col-md-4">
+				<div class="card" height="600">
+					<img class="card-img-top" src="img/pokemongo.png" height="450">
+					<div class="card-body">
+						<h4 class="card-title">Pokémon GO</h4>
+						<p class="card-text">I have been playing since July 22, 2016.I walked with Pokemon over 1500km.It helps to create a reason for exercising.                 　　　  　　　　</p>
+						<!-- <a href="#" class="btn btn-outline-secondary">See Profile</a> -->
+					</div>
+				</div>
+		</div>
+		<div class="col-md-4">
+				<div class="card">
+					<img src="img/snow.png" class="card-img-top" height="450">
+					<div class="card-body">
+						<h4 class="card-title">Snowboarding</h4>
+						<p class="card-text">For the first time as a college student, I realized the appeal of the mountain. However, only in winter. Snowbo is very tired but very excited.</p>
+						<!-- <a href="#" class="btn btn-outline-secondary">See Profile</a> -->
+					</div>
+				</div>
+		</div>
+		<div class="col-md-4">
+				<div class="card">
+					<img src="img/anime.png" class="card-img-top" height="450">
+					<div class="card-body">
+						<h4 class="card-title">Animation</h4>
+						<p class="card-text">Have you ever seen Japanese Anime? Recently,an anime called 'KIMETSU NO YAIBA' has become popular in Japan. I'm watching this anime too,it's a very gentle animation. </p>
+						<!-- <a href="#" class="btn btn-outline-secondary">See Profile</a> -->
+					</div>
+				</div>
+		</div>
+</div>
+</div>
+<!--- Two Column Section -->
+<div id="information">
+	<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<br>
+			<br>
+			<h2>Information</h2>
+			<p>I joined Human Resources Business Web Development Company.</p>
+			<p>I am engaged in improving HR by using the knowledge of machine learning. HR Tech changes HR.</p>
+			<br>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/hrtech.png" alt="" class="img-fluid">
+		</div>
+	</div>
+	<hr class="my-4">
+	</div>
+</div>
+
+<!--- Connect -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+
+	<div class="col-12">
+		<h2>Connect</h2>
+	</div>
+	<div class="col-12 social padding">
+		<!-- <a href=""><img class="fab fa-facebook"></i></a> -->
+		<a href="https://github.com/zuumi"><i class="fab fa-github"></i></a>
+		<a href="https://twitter.com/_Z_HACK"><img class="fab fa-twitter"></i></a>
+		<!-- <a href="#"><img class="fab fa-google-plus-g"></i></a> -->
+		<a href="https://www.instagram.com/ramen_tsuke.lovers/"><img class="fab fa-instagram"></i></a>
+		<!-- <a href="#"><img class="fab fa-youtube"></i></a> -->
+	</div>
+</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+	<div class="row text-center">
+		<div class="col-md-12">
+			<img id="myicon" src="img/yskicon.png">
+			<hr class="light">
+			<!-- <p>080-0000-0000</p> -->
+			<p>k0w8z0m6y1sh3k@gmail.com</p>
+			<p>Machida</p>
+			<p>Tokyo,Japan</p>
+		</div>
+		<!-- <div class="col-md-4">
+			<hr class="light">
+			<h5>History</h5>
+			<hr class="light">
+			<p></p>
+			<p>1000 streeet Name</p>
+			<p>1000 streeet Name</p>
+			<p>1000 streeet Name</p>
+		</div>
+		<div class="col-md-4">
+			<hr class="light">
+			<h5>Our Hours</h5>
+			<hr class="light">
+			<p>1000 streeet Name</p>
+			<p>1000 streeet Name</p>
+			<p>1000 streeet Name</p>
+			<p>1000 streeet Name</p>
+	  </div> -->
+		<div class="col-12">
+			<hr class="light">
+			<h5>&copy; 2020 YSK.</h5>
+		</div>
+	</div>
+	</div>
+</footer>
+
+
+
+</body>
+</html>
+
+<!-- View in Browser: Drew's #1 Trending YouTube Tutorial -->
+<!-- <div class="youtube-tutorial">
+	<a href="http://bit.ly/build-4-websites" target="_blank">
+    <img src="https://www.w3newbie.com/wp-content/uploads/nuno-youtube-banner-img.png">
+  </a>
+</div> -->
+<!-- End View in Browser: Drew's #1 Trending YouTube Tutorial -->
